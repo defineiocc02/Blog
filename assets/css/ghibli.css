@@ -161,34 +161,48 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
-/* ---- 调整内容区域宽度，减少左右空白 ---- */
+/* ---- 调整内容区域宽度，大幅减少左右空白 ---- */
 .md-grid {
-  max-width: 1440px;
+  max-width: 95%;
+  width: 95%;
 }
 
 @media screen and (min-width: 76.25em) {
   .md-grid {
-    max-width: 1500px;
+    max-width: 94%;
+    width: 94%;
   }
   .md-sidebar--primary {
-    width: 13rem;
+    width: 11rem;
   }
   .md-sidebar--secondary {
-    width: 13rem;
-    margin-left: -13rem;
+    width: 11rem;
+    margin-left: -11rem;
+  }
+  /* 主内容区域 */
+  .md-content {
+    max-width: none;
   }
 }
 
 @media screen and (min-width: 100em) {
   .md-grid {
-    max-width: 1600px;
+    max-width: 92%;
+    width: 92%;
   }
   .md-sidebar--primary {
-    width: 14rem;
+    width: 12rem;
   }
   .md-sidebar--secondary {
-    width: 14rem;
-    margin-left: -14rem;
+    width: 12rem;
+    margin-left: -12rem;
+  }
+}
+
+@media screen and (min-width: 120em) {
+  .md-grid {
+    max-width: 90%;
+    width: 90%;
   }
 }
 
