@@ -24,13 +24,19 @@ theme:
         name: 切换到阳光森林
   features:
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.sections
+    - navigation.expand
     - navigation.top
     - navigation.tracking
     - navigation.footer
     - navigation.indexes
+    - navigation.path
+    - toc.integrate
+    - toc.follow
     - search.highlight
     - search.suggest
+    - search.share
     - content.code.copy
     - content.code.annotate
   icon:
@@ -54,6 +60,7 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/defineiocc02
+  generator: false
 
 markdown_extensions:
   - admonition
@@ -62,6 +69,8 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.highlight:
       anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.tabbed:
       alternate_style: true
@@ -73,5 +82,6 @@ markdown_extensions:
   - tables
   - toc:
       permalink: true
+      toc_depth: 3
 
 copyright: Copyright &copy; 2026 Starynight · 🌿 像风一样自由
