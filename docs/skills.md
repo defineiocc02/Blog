@@ -2,36 +2,127 @@
 
 ---
 
-## 专业技能评级
+<div class="ghibli-card">
 
-### 模拟/混合信号芯片设计
+## 模拟/混合信号芯片设计
 
-| 技能 | 熟练度 | 描述 |
-|------|--------|------|
-| SAR ADC 架构与设计 | ⭐⭐⭐⭐⭐ | 精通 SAR ADC 从架构到实现的完整流程 |
-| 行为建模与仿真 | ⭐⭐⭐⭐⭐ | 使用 Python 进行高精度行为级建模 |
-| 标定技术 | ⭐⭐⭐⭐ | 高级校准算法设计与实现 |
-| 性能验证 | ⭐⭐⭐⭐ | 系统性性能评估与验证方法 |
+<div class="skill-bar">
+  <span class="skill-bar-label">SAR ADC 架构</span>
+  <div class="skill-bar-track">
+    <div class="skill-bar-fill" data-width="95%" style="width: 95%"></div>
+  </div>
+  <span class="stars">⭐⭐⭐⭐⭐</span>
+</div>
 
-### 数字设计与验证
+<div class="skill-bar">
+  <span class="skill-bar-label">行为建模与仿真</span>
+  <div class="skill-bar-track">
+    <div class="skill-bar-fill" data-width="95%" style="width: 95%"></div>
+  </div>
+  <span class="stars">⭐⭐⭐⭐⭐</span>
+</div>
 
-| 技能 | 熟练度 | 描述 |
-|------|--------|------|
-| SystemVerilog | ⭐⭐⭐⭐⭐ | RTL 设计、测试台开发、断言 |
-| VHDL | ⭐⭐⭐⭐⭐ | 硬件描述与实现 |
-| 测试台开发 | ⭐⭐⭐⭐ | 自动化测试环境搭建 |
-| 验证方法学 | ⭐⭐⭐⭐ | 覆盖率驱动的验证流程 |
+<div class="skill-bar">
+  <span class="skill-bar-label">标定技术</span>
+  <div class="skill-bar-track">
+    <div class="skill-bar-fill" data-width="80%" style="width: 80%"></div>
+  </div>
+  <span class="stars">⭐⭐⭐⭐</span>
+</div>
 
-### 深度学习与 AI
+<div class="skill-bar">
+  <span class="skill-bar-label">性能验证</span>
+  <div class="skill-bar-track">
+    <div class="skill-bar-fill" data-width="80%" style="width: 80%"></div>
+  </div>
+  <span class="stars">⭐⭐⭐⭐</span>
+</div>
 
-| 技能 | 熟练度 | 描述 |
-|------|--------|------|
-| 深度学习理论 | ⭐⭐⭐⭐ | 从基础到前沿的理论理解 |
-| LLM 应用 | ⭐⭐⭐⭐ | 大语言模型微调与部署 |
-| PyTorch | ⭐⭐⭐ | 深度学习框架应用 |
-| TensorFlow | ⭐⭐⭐ | 深度学习框架应用 |
+</div>
 
 ---
+
+<div class="ghibli-card">
+
+## 数字设计与验证
+
+<div class="skill-bar">
+  <span class="skill-bar-label">SystemVerilog</span>
+  <div class="skill-bar-track">
+    <div class="skill-bar-fill" data-width="95%" style="width: 95%"></div>
+  </div>
+  <span class="stars">⭐⭐⭐⭐⭐</span>
+</div>
+
+<div class="skill-bar">
+  <span class="skill-bar-label">VHDL</span>
+  <div class="skill-bar-track">
+    <div class="skill-bar-fill" data-width="95%" style="width: 95%"></div>
+  </div>
+  <span class="stars">⭐⭐⭐⭐⭐</span>
+</div>
+
+<div class="skill-bar">
+  <span class="skill-bar-label">测试台开发</span>
+  <div class="skill-bar-track">
+    <div class="skill-bar-fill" data-width="80%" style="width: 80%"></div>
+  </div>
+  <span class="stars">⭐⭐⭐⭐</span>
+</div>
+
+<div class="skill-bar">
+  <span class="skill-bar-label">验证方法学</span>
+  <div class="skill-bar-track">
+    <div class="skill-bar-fill" data-width="80%" style="width: 80%"></div>
+  </div>
+  <span class="stars">⭐⭐⭐⭐</span>
+</div>
+
+</div>
+
+---
+
+<div class="ghibli-card">
+
+## 深度学习与 AI
+
+<div class="skill-bar">
+  <span class="skill-bar-label">深度学习理论</span>
+  <div class="skill-bar-track">
+    <div class="skill-bar-fill" data-width="80%" style="width: 80%"></div>
+  </div>
+  <span class="stars">⭐⭐⭐⭐</span>
+</div>
+
+<div class="skill-bar">
+  <span class="skill-bar-label">LLM 应用</span>
+  <div class="skill-bar-track">
+    <div class="skill-bar-fill" data-width="80%" style="width: 80%"></div>
+  </div>
+  <span class="stars">⭐⭐⭐⭐</span>
+</div>
+
+<div class="skill-bar">
+  <span class="skill-bar-label">PyTorch</span>
+  <div class="skill-bar-track">
+    <div class="skill-bar-fill" data-width="60%" style="width: 60%"></div>
+  </div>
+  <span class="stars">⭐⭐⭐</span>
+</div>
+
+<div class="skill-bar">
+  <span class="skill-bar-label">TensorFlow</span>
+  <div class="skill-bar-track">
+    <div class="skill-bar-fill" data-width="60%" style="width: 60%"></div>
+  </div>
+  <span class="stars">⭐⭐⭐</span>
+</div>
+
+</div>
+
+---
+
+<div class="ghibli-card">
 
 ## 技术栈一览
 
@@ -61,7 +152,11 @@
 └── Linux & Shell 脚本
 ```
 
+</div>
+
 ---
+
+<div class="ghibli-card">
 
 ## 工具与平台
 
@@ -73,11 +168,11 @@
 
 ### 编程语言
 
-- Python (高级)
-- MATLAB (高级)
-- SystemVerilog / VHDL (高级)
-- Verilog (中级)
-- Shell Script (中级)
+- Python（高级）
+- MATLAB（高级）
+- SystemVerilog / VHDL（高级）
+- Verilog（中级）
+- Shell Script（中级）
 
 ### 开发平台
 
@@ -86,14 +181,20 @@
 - Docker
 - VS Code
 
+</div>
+
 ---
+
+<div class="ghibli-card">
 
 ## 持续学习
 
-- 📖 计算机体系结构 (RISC-V)
+- 📖 计算机体系结构（RISC-V）
 - 🤖 深度学习与 AI 前沿
 - 🔬 先进工艺节点下的 ADC 设计
 - 🏗️ 开源硬件生态
+
+</div>
 
 ---
 

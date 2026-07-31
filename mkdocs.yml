@@ -11,46 +11,48 @@ theme:
   language: zh
   palette:
     - scheme: default
-      primary: indigo
-      accent: blue
+      primary: custom
+      accent: custom
       toggle:
         icon: material/weather-night
-        name: 切换暗色模式
+        name: 切换到月光森林
     - scheme: slate
-      primary: indigo
-      accent: blue
+      primary: custom
+      accent: custom
       toggle:
         icon: material/weather-sunny
-        name: 切换亮色模式
+        name: 切换到阳光森林
   features:
     - navigation.tabs
     - navigation.sections
     - navigation.top
     - navigation.tracking
+    - navigation.footer
     - search.highlight
     - search.suggest
     - content.code.copy
     - content.code.annotate
   icon:
-    logo: material/account-circle
-    favicon: material/account-circle
+    logo: material/leaf
+    favicon: material/leaf
+
+extra_css:
+  - assets/css/ghibli.css
+
+extra_javascript:
+  - assets/js/ghibli.js
 
 nav:
-  - 主页: index.md
-  - 简历: resume.md
-  - 项目: projects.md
-  - 技能: skills.md
-  - 博客: blog/
+  - 🏠 主页: index.md
+  - 📄 简历: resume.md
+  - 🚀 项目: projects.md
+  - 🛠️ 技能: skills.md
+  - 📝 笔记: blog/index.md
 
 extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/defineiocc02
-    - icon: fontawesome/solid/envelope
-      link: mailto:defineiocc02@example.com
-  analytics:
-    provider: google
-    property: G-XXXXXXXXXX
 
 markdown_extensions:
   - admonition
@@ -70,4 +72,4 @@ markdown_extensions:
   - toc:
       permalink: true
 
-copyright: Copyright &copy; 2026 Starynight (defineiocc02)
+copyright: Copyright &copy; 2026 Starynight · 🌿 像风一样自由

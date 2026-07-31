@@ -1,80 +1,85 @@
-# 👋 你好，我是 Starynight
+# 🍃 午后阳光，刚刚好
 
-> **模拟/混合信号芯片设计工程师 | 深度学习爱好者 | 计算机体系结构探索者**
-
----
-
-## 🎯 关于我
-
-我是一名芯片设计工程师，专注于**模拟与混合信号集成电路设计**，同时对**深度学习**、**大语言模型**和**计算机体系结构**充满热情。
-
-- 🔌 **模拟 & 混合信号芯片设计** — 特别是 SAR ADC
-- 🤖 **深度学习 & 大语言模型**
-- 💻 **计算机体系结构 & RISC-V**
-- 🔬 **硬件验证 & 建模**
-
-### 教育背景
-
-**华中科技大学 (Huazhong University of Science and Technology)**
-
-- 所在地：武汉，中国
-- 在校期间专注于模拟/混合信号芯片设计与验证
+<p class="welcome-quote">
+"生活就像风一样，看不见却能感受到。"<br>
+<span style="font-size: 0.8em; opacity: 0.7;">— 宫崎骏《起风了》</span>
+</p>
 
 ---
 
-## 🌟 精选项目
+<div class="ghibli-card">
 
-### ADC 设计与验证
+## 🌿 你好，我是 Starynight
 
-| 项目 | 描述 | 技术栈 |
-|------|------|--------|
-| [12位SAR ADC行为建模](https://github.com/defineiocc02/Behavioral-modeling-of-12bit-calibrated-sar-adc) | 高级标定技术的SAR ADC行为建模 | Python |
-| [ADC工具箱](https://github.com/defineiocc02/ADCToolbox) | 建模·测试·分析·标定全套工具 | Python |
-| [SAR ADC验证框架](https://github.com/defineiocc02/SAR_ADC_Verification) | 性能验证与综合分析 | MATLAB |
+我是一名**芯片设计工程师**，来自华中科技大学，现居武汉。
 
-### 数字设计
+我的工作是在微观世界里搭建精密的电路——像画一幅极小极小的画，每一笔都关乎电流的流向。与此同时，我也深深着迷于**深度学习**和**计算机体系结构**，在代码与硅片之间寻找某种诗意的平衡。
 
-| 项目 | 描述 | 技术栈 |
-|------|------|--------|
-| [SystemVerilog数字电路设计](https://github.com/defineiocc02/Digital_process.srcs) | 完整的设计与验证示例 | SystemVerilog |
+**我关注的方向：**
 
-### 学习资源
+- 🔌 模拟 & 混合信号芯片设计，特别是 SAR ADC
+- 🤖 深度学习与大语言模型
+- 💻 计算机体系结构与 RISC-V
+- 🔬 硬件验证与行为建模
 
-| 项目 | 描述 | 规模 |
-|------|------|------|
-| [动手学深度学习](https://github.com/defineiocc02/d2l-zh) | 《动手学深度学习》中文版 | 317MB |
-| [深度学习基础 (Springer)](https://github.com/defineiocc02/Deep_Learning_Foundation_and_Concepts-Springer) | Springer 官方版本 | 999MB |
-| [动手学大语言模型](https://github.com/defineiocc02/Hands-On-Large-Language-Models) | O'Reilly 官方书籍代码 | 13MB |
-| [计算机体系结构](https://github.com/defineiocc02/goossens-book-ip-projects) | HLS/RISC-V 体系结构 | 1.9GB |
+</div>
 
 ---
 
-## 📊 项目组合一览
+<div class="ghibli-card">
 
-```
-📈 项目组合分析
-├── 原创研究项目: 3
-│   ├── SAR ADC 行为建模
-│   ├── ADC 工具箱套件
-│   └── ADC 验证框架
-├── 数字设计: 1
-│   └── SystemVerilog 完整实现
-├── 教育资源: 4
-│   ├── 深度学习 (2 个项目)
-│   ├── LLM 应用 (1 个项目)
-│   └── 计算机体系结构 (1 个项目)
-└── 总内容: 4GB+
-    └── 跨越模拟、数字、AI 和体系结构
-```
+## 🌟 正在做的事
 
----
+### 🔴 12位 SAR ADC 行为建模
+用 Python 搭起一座桥梁——连接理论设计与真实芯片。高级标定技术，120MB+ 的代码库，是我最近最投入的项目。
 
-## 💡 当前关注
+[去看看 →](https://github.com/defineiocc02/Behavioral-modeling-of-12bit-calibrated-sar-adc)
 
-- **活跃研究**: 12位 SAR ADC 高级标定技术、数字电路验证自动化、ADC 系统级分析
-- **技术兴趣**: 混合信号 IC 设计优化、行为建模最佳实践、AI 在电路设计中的应用、RISC-V 处理器体系结构
-- **即将推出**: ML 优化高级 ADC 建模、RISC-V 处理器实现、AI 辅助芯片设计验证、开源 EDA 工具贡献
+### ⚙️ ADC 工具箱
+一个给模拟工程师的礼物：建模、测试、分析、标定，一箱搞定。
+
+[去看看 →](https://github.com/defineiocc02/ADCToolbox)
+
+### 🧪 SAR ADC 验证框架
+用 MATLAB 搭建的验证天地，让每一颗芯片都能被认真对待。
+
+[去看看 →](https://github.com/defineiocc02/SAR_ADC_Verification)
+
+</div>
 
 ---
 
-> *"持续学习，持续构建，持续分享。"*
+<div class="ghibli-card">
+
+## 📚 我在读的书
+
+| 书名 | 来源 |
+|------|------|
+| 《动手学深度学习》 | [d2l-zh](https://github.com/defineiocc02/d2l-zh) |
+| 《深度学习基础》Springer 版 | [DL Foundation](https://github.com/defineiocc02/Deep_Learning_Foundation_and_Concepts-Springer) |
+| 《动手学大语言模型》O'Reilly | [Hands-On LLM](https://github.com/defineiocc02/Hands-On-Large-Language-Models) |
+| 《HLS/RISC-V 计算机体系结构》 | [goossens-book](https://github.com/defineiocc02/goossens-book-ip-projects) |
+
+</div>
+
+---
+
+<div class="ghibli-card">
+
+## 🎯 此刻在想什么
+
+- 🌱 让 SAR ADC 的行为建模更接近真实硅片
+- 🔧 用 SystemVerilog 搭建更优雅的数字验证框架
+- 🧠 把深度学习的思维带入芯片设计流程
+- 📖 准备探索 RISC-V 处理器的世界
+
+**8 个仓库 · 4GB+ 代码 · 从模拟到数字，从硅片到算法**
+
+</div>
+
+---
+
+<p class="welcome-quote">
+🌿 持续学习，持续构建，持续分享。<br>
+<span style="font-size: 0.9em;">像龙猫一样，对世界保持好奇。</span>
+</p>

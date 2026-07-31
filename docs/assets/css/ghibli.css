@@ -1,0 +1,1304 @@
+/* ============================================================
+   🌿 吉卜力双主题 — 阳光森林(亮) × 月光魔法森林(暗)
+   深度优化版：字体、排版、质感、动效全面升级
+   ============================================================ */
+
+/* ---- 字体系统：绘本感手写 × 优雅宋体 × 现代无衬线 ---- */
+@import url('https://fonts.googleapis.com/css2?family=Long+Cang&family=Ma+Shan+Zheng&family=ZCOOL+XiaoWei&family=Noto+Serif+SC:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap');
+
+/* ============================================================
+   🌞 亮色主题 — 午后阳光森林 · 水彩绘本
+   ============================================================ */
+:root {
+  /* 色板 — 更丰富的水彩层次 */
+  --g-sky:        #CDE4DD;
+  --g-sky-deep:   #A8D0C5;
+  --g-sky-light:  #E0EFEA;
+  --g-cream:      #FFFAF2;
+  --g-paper:      #FFFDF8;
+  --g-warm:       #F7ECD8;
+  --g-sand:       #F0E4D0;
+  --g-sand-light: #F5ECDD;
+  --g-forest:     #7BA05B;
+  --g-forest-d:   #5E8043;
+  --g-forest-dd:  #4A6835;
+  --g-moss:       #A8C78A;
+  --g-moss-light: #C5D9A3;
+  --g-leaf:       #D4E4B8;
+  --g-sun:        #F0C75E;
+  --g-sun-light:  #F9E49A;
+  --g-sun-glow:   #FFF2C4;
+  --g-peach:      #E8A87C;
+  --g-peach-light:#F0C4A8;
+  --g-terra:      #D4846A;
+  --g-terra-deep: #B86B52;
+  --g-rose:       #E8B4A0;
+  --g-rose-light: #F2D0C4;
+  --g-brown:      #8B7355;
+  --g-brown-d:    #6B5642;
+  --g-brown-l:    #A89070;
+  --g-ink:        #4A4540;
+  --g-ink-soft:   #6B6560;
+  --g-ink-light:  #8A8580;
+
+  /* Material 覆盖 */
+  --md-primary-fg-color: var(--g-forest);
+  --md-primary-fg-color--light: var(--g-moss);
+  --md-primary-fg-color--dark: var(--g-forest-d);
+  --md-primary-bg-color: var(--g-paper);
+  --md-accent-fg-color: var(--g-terra);
+  --md-accent-bg-color: var(--g-paper);
+  --md-default-fg-color: var(--g-ink);
+  --md-default-bg-color: var(--g-cream);
+  --md-typeset-color: var(--g-ink);
+  --md-typeset-a-color: var(--g-terra);
+  --md-code-bg-color: rgba(247, 236, 216, 0.5);
+  --md-code-fg-color: var(--g-brown-d);
+  --md-footer-bg-color: var(--g-forest-d);
+  --md-footer-fg-color: var(--g-cream);
+
+  /* 阴影系统 — 多层柔和阴影 */
+  --shadow-xs:    0 1px 3px rgba(139, 115, 85, 0.06);
+  --shadow-sm:    0 2px 8px rgba(139, 115, 85, 0.08);
+  --shadow-md:    0 4px 20px rgba(139, 115, 85, 0.1);
+  --shadow-lg:    0 8px 36px rgba(139, 115, 85, 0.12);
+  --shadow-xl:    0 14px 52px rgba(139, 115, 85, 0.16);
+  --shadow-inset: inset 0 1px 0 rgba(255,255,255,0.6);
+
+  /* 边框 */
+  --border-soft: 1px solid rgba(168, 199, 138, 0.25);
+  --border-card: 1px solid rgba(168, 199, 138, 0.18);
+  --border-accent: 1px solid rgba(212, 132, 106, 0.2);
+
+  /* 圆角 */
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 22px;
+  --radius-xl: 28px;
+  --radius-full: 999px;
+
+  /* 间距 */
+  --space-xs: 0.4rem;
+  --space-sm: 0.8rem;
+  --space-md: 1.2rem;
+  --space-lg: 1.8rem;
+  --space-xl: 2.5rem;
+
+  /* 动画 */
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+}
+
+/* ============================================================
+   🌙 暗色主题 — 月光魔法森林 · 梦幻夜话
+   ============================================================ */
+[data-md-color-scheme="slate"] {
+  --g-sky:        #1A2332;
+  --g-sky-deep:   #0F1722;
+  --g-sky-light:  #242E42;
+  --g-cream:      #1E2636;
+  --g-paper:      #242E42;
+  --g-warm:       #2A3348;
+  --g-sand:       #2F3A50;
+  --g-sand-light: #354058;
+  --g-forest:     #6B9E6A;
+  --g-forest-d:   #4F7A4F;
+  --g-forest-dd:  #3D5C3D;
+  --g-moss:       #8BB88A;
+  --g-moss-light: #A8CCA7;
+  --g-leaf:       #C2DCC1;
+  --g-sun:        #F0C75E;
+  --g-sun-light:  #FFE08A;
+  --g-sun-glow:   #FFF0B8;
+  --g-peach:      #E8A87C;
+  --g-peach-light:#F0C4A8;
+  --g-terra:      #E89B7A;
+  --g-terra-deep: #D4846A;
+  --g-rose:       #D4A0A0;
+  --g-rose-light: #E2BEBE;
+  --g-brown:      #A89880;
+  --g-brown-d:    #C0B098;
+  --g-brown-l:    #D4C8B4;
+  --g-ink:        #E8E4DC;
+  --g-ink-soft:   #C8C0B4;
+  --g-ink-light:  #A8A094;
+
+  --md-primary-fg-color: var(--g-forest);
+  --md-primary-fg-color--light: var(--g-moss);
+  --md-primary-fg-color--dark: var(--g-forest-d);
+  --md-primary-bg-color: var(--g-paper);
+  --md-accent-fg-color: var(--g-sun-light);
+  --md-accent-bg-color: var(--g-paper);
+  --md-default-fg-color: var(--g-ink);
+  --md-default-bg-color: var(--g-sky-deep);
+  --md-typeset-color: var(--g-ink);
+  --md-typeset-a-color: var(--g-sun-light);
+  --md-code-bg-color: rgba(42, 51, 72, 0.6);
+  --md-code-fg-color: var(--g-leaf);
+  --md-footer-bg-color: var(--g-sky-deep);
+  --md-footer-fg-color: var(--g-ink);
+  --md-hue: 220deg;
+
+  --shadow-xs:    0 1px 4px rgba(0, 0, 0, 0.2);
+  --shadow-sm:    0 2px 12px rgba(0, 0, 0, 0.25);
+  --shadow-md:    0 4px 24px rgba(0, 0, 0, 0.3);
+  --shadow-lg:    0 8px 40px rgba(0, 0, 0, 0.35);
+  --shadow-xl:    0 14px 56px rgba(0, 0, 0, 0.45);
+  --shadow-inset: inset 0 1px 0 rgba(255,255,255,0.05);
+
+  --border-soft: 1px solid rgba(107, 158, 106, 0.18);
+  --border-card: 1px solid rgba(107, 158, 106, 0.12);
+  --border-accent: 1px solid rgba(240, 199, 94, 0.15);
+}
+
+/* ============================================================
+   全局基础与纸张质感
+   ============================================================ */
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background-color: var(--md-default-bg-color);
+  color: var(--g-ink);
+  line-height: 1.85;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern", "liga";
+  transition: background-color 0.6s var(--ease-smooth), color 0.6s var(--ease-smooth);
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* 纸张纹理叠加 */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.4;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.035'/%3E%3C/svg%3E");
+}
+
+[data-md-color-scheme="slate"] body::before {
+  opacity: 0.25;
+}
+
+/* ---- 亮色背景 — 水彩天空 ---- */
+body {
+  background-image:
+    radial-gradient(ellipse 80% 50% at 15% 0%, rgba(240, 199, 94, 0.15) 0%, transparent 50%),
+    radial-gradient(ellipse 60% 40% at 85% 5%, rgba(205, 228, 221, 0.35) 0%, transparent 50%),
+    radial-gradient(ellipse 90% 60% at 50% 40%, rgba(247, 236, 216, 0.3) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 40% at 20% 90%, rgba(168, 199, 138, 0.1) 0%, transparent 50%),
+    radial-gradient(ellipse 60% 50% at 85% 85%, rgba(232, 168, 124, 0.06) 0%, transparent 50%),
+    radial-gradient(ellipse 40% 30% at 50% 100%, rgba(123, 160, 91, 0.05) 0%, transparent 50%);
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+/* ---- 暗色背景 — 夜空星辰 ---- */
+[data-md-color-scheme="slate"] body {
+  background-image:
+    radial-gradient(ellipse 80% 50% at 15% 0%, rgba(240, 199, 94, 0.06) 0%, transparent 50%),
+    radial-gradient(ellipse 60% 40% at 85% 5%, rgba(107, 158, 106, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse 90% 60% at 50% 40%, rgba(26, 35, 50, 0.4) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 40% at 20% 90%, rgba(107, 158, 106, 0.06) 0%, transparent 50%),
+    radial-gradient(ellipse 60% 50% at 85% 85%, rgba(240, 199, 94, 0.04) 0%, transparent 50%);
+}
+
+/* 暗色模式星星背景 */
+[data-md-color-scheme="slate"] body::after {
+  content: '';
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  pointer-events: none;
+  z-index: 0;
+  background-image:
+    radial-gradient(1px 1px at 20px 30px, rgba(255,255,255,0.4), transparent),
+    radial-gradient(1px 1px at 40px 70px, rgba(255,255,255,0.25), transparent),
+    radial-gradient(1px 1px at 50px 160px, rgba(255,255,255,0.3), transparent),
+    radial-gradient(1px 1px at 90px 40px, rgba(255,255,255,0.35), transparent),
+    radial-gradient(1px 1px at 130px 80px, rgba(255,255,255,0.2), transparent),
+    radial-gradient(1.5px 1.5px at 160px 120px, rgba(255,224,138,0.5), transparent),
+    radial-gradient(1px 1px at 200px 50px, rgba(255,255,255,0.3), transparent),
+    radial-gradient(1px 1px at 250px 180px, rgba(255,255,255,0.25), transparent),
+    radial-gradient(1px 1px at 300px 90px, rgba(255,255,255,0.4), transparent),
+    radial-gradient(1px 1px at 350px 140px, rgba(255,224,138,0.35), transparent);
+  background-size: 400px 250px;
+  animation: twinkle 8s ease-in-out infinite alternate;
+  opacity: 0.6;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.7; }
+}
+
+/* ============================================================
+   顶部导航栏
+   ============================================================ */
+.md-header {
+  background: linear-gradient(135deg, var(--g-forest) 0%, var(--g-moss) 50%, var(--g-moss-light) 100%);
+  box-shadow: 0 2px 20px rgba(94, 128, 67, 0.15);
+  position: relative;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+[data-md-color-scheme="slate"] .md-header {
+  background: linear-gradient(135deg, var(--g-forest-dd) 0%, var(--g-forest-d) 50%, var(--g-forest) 100%);
+  box-shadow: 0 2px 24px rgba(0, 0, 0, 0.3);
+}
+
+.md-header::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--g-sun-light), var(--g-sun), var(--g-sun-light), transparent);
+  opacity: 0.6;
+}
+
+[data-md-color-scheme="slate"] .md-header::before {
+  opacity: 0.4;
+  background: linear-gradient(90deg, transparent, var(--g-moss-light), var(--g-sun-light), var(--g-moss-light), transparent);
+}
+
+.md-header__title {
+  font-family: 'ZCOOL XiaoWei', 'Noto Serif SC', serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  letter-spacing: 1.5px;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.md-tabs {
+  background: color-mix(in srgb, var(--g-moss) 20%, transparent);
+  backdrop-filter: blur(8px);
+}
+
+[data-md-color-scheme="slate"] .md-tabs {
+  background: color-mix(in srgb, var(--g-forest-d) 30%, transparent);
+}
+
+/* 导航链接 */
+.md-tabs__link {
+  font-family: 'ZCOOL XiaoWei', 'Noto Serif SC', serif;
+  font-size: 0.95rem;
+  letter-spacing: 0.8px;
+  opacity: 0.82;
+  transition: all 0.3s var(--ease-smooth);
+  position: relative;
+}
+
+.md-tabs__link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--g-sun-light);
+  border-radius: 2px;
+  transition: all 0.3s var(--ease-spring);
+  transform: translateX(-50%);
+}
+
+.md-tabs__link:hover {
+  opacity: 1;
+}
+
+.md-tabs__link:hover::after {
+  width: 70%;
+}
+
+.md-tabs__link--active {
+  opacity: 1;
+  font-weight: 400;
+}
+
+.md-tabs__link--active::after {
+  width: 70%;
+}
+
+/* ============================================================
+   主内容区
+   ============================================================ */
+.md-main__inner {
+  margin-top: 1rem;
+}
+
+.md-content {
+  background: color-mix(in srgb, var(--g-paper) 80%, transparent);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-radius: var(--radius-xl);
+  padding: 1rem 2.8rem 2.5rem;
+  margin: 0.8rem 0;
+  box-shadow: var(--shadow-md);
+  border: var(--border-card);
+  position: relative;
+  transition: background-color 0.6s var(--ease-smooth), box-shadow 0.4s var(--ease-smooth);
+}
+
+.md-content::before {
+  content: '';
+  position: absolute;
+  top: -1px; left: 50px; right: 50px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--g-moss) 35%, transparent), color-mix(in srgb, var(--g-sun-light) 25%, transparent), transparent);
+  border-radius: 2px;
+}
+
+/* ============================================================
+   排版系统 — 精致层级
+   ============================================================ */
+.md-typeset {
+  font-size: 0.98rem;
+  line-height: 1.9;
+  color: var(--g-ink);
+}
+
+/* 一级标题 — 绘本大标题 */
+.md-typeset h1 {
+  font-family: 'Ma Shan Zheng', 'ZCOOL XiaoWei', 'Noto Serif SC', serif;
+  font-weight: 400;
+  color: var(--g-forest-d);
+  font-size: 2.6em;
+  margin: 1.8rem 0 1.4rem;
+  letter-spacing: 3px;
+  line-height: 1.25;
+}
+
+[data-md-color-scheme="slate"] .md-typeset h1 {
+  color: var(--g-leaf);
+  text-shadow: 0 0 20px rgba(168, 204, 167, 0.2);
+}
+
+.md-typeset h1::after {
+  content: '';
+  display: block;
+  width: 120px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--g-forest), var(--g-moss), var(--g-sun-light), transparent);
+  border-radius: 3px;
+  margin-top: 14px;
+  transition: width 0.7s var(--ease-spring);
+}
+
+.md-typeset h1:hover::after {
+  width: 200px;
+}
+
+/* 二级标题 — 章节标题 */
+.md-typeset h2 {
+  font-family: 'ZCOOL XiaoWei', 'Noto Serif SC', serif;
+  font-weight: 400;
+  color: var(--g-brown);
+  font-size: 1.7em;
+  margin-top: 2.8rem;
+  margin-bottom: 1.2rem;
+  letter-spacing: 1.5px;
+  line-height: 1.4;
+  padding-bottom: 0.4em;
+  position: relative;
+}
+
+[data-md-color-scheme="slate"] .md-typeset h2 {
+  color: var(--g-sun-light);
+  text-shadow: 0 0 15px rgba(255, 224, 138, 0.15);
+}
+
+.md-typeset h2::before {
+  content: '';
+  position: absolute;
+  left: -1.2rem;
+  top: 0.3em;
+  width: 4px;
+  height: 1.1em;
+  background: linear-gradient(180deg, var(--g-moss), var(--g-forest));
+  border-radius: 4px;
+  opacity: 0.6;
+}
+
+[data-md-color-scheme="slate"] .md-typeset h2::before {
+  background: linear-gradient(180deg, var(--g-sun-light), var(--g-sun));
+  box-shadow: 0 0 10px rgba(240, 199, 94, 0.3);
+}
+
+/* 三级标题 */
+.md-typeset h3 {
+  font-family: 'ZCOOL XiaoWei', 'Noto Serif SC', serif;
+  font-weight: 400;
+  color: var(--g-brown-d);
+  font-size: 1.3em;
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+  letter-spacing: 0.8px;
+}
+
+[data-md-color-scheme="slate"] .md-typeset h3 {
+  color: var(--g-peach);
+}
+
+/* 四级标题 */
+.md-typeset h4 {
+  font-family: 'Noto Serif SC', serif;
+  font-weight: 600;
+  color: var(--g-ink);
+  font-size: 1.1em;
+  margin-top: 1.5rem;
+  margin-bottom: 0.6rem;
+  letter-spacing: 0.3px;
+}
+
+/* 段落 */
+.md-typeset p {
+  margin: 1em 0;
+  color: var(--g-ink);
+}
+
+/* 强调文字 */
+.md-typeset strong {
+  color: var(--g-terra-deep);
+  font-weight: 600;
+}
+
+[data-md-color-scheme="slate"] .md-typeset strong {
+  color: var(--g-sun-light);
+  font-weight: 500;
+}
+
+/* 斜体 */
+.md-typeset em {
+  font-family: 'Noto Serif SC', serif;
+  font-style: italic;
+  color: var(--g-brown);
+}
+
+[data-md-color-scheme="slate"] .md-typeset em {
+  color: var(--g-peach-light);
+}
+
+/* ============================================================
+   链接
+   ============================================================ */
+.md-typeset a {
+  color: var(--g-terra);
+  text-decoration: none;
+  border-bottom: 1.5px solid transparent;
+  transition: all 0.3s var(--ease-smooth);
+  font-weight: 500;
+  padding-bottom: 1px;
+  position: relative;
+}
+
+[data-md-color-scheme="slate"] .md-typeset a {
+  color: var(--g-sun-light);
+}
+
+.md-typeset a:hover {
+  color: var(--g-forest);
+  border-bottom-color: var(--g-moss);
+}
+
+[data-md-color-scheme="slate"] .md-typeset a:hover {
+  color: var(--g-leaf);
+  border-bottom-color: var(--g-moss);
+  text-shadow: 0 0 8px rgba(168, 204, 167, 0.3);
+}
+
+/* ============================================================
+   列表
+   ============================================================ */
+.md-typeset ul,
+.md-typeset ol {
+  padding-left: 1.8em;
+}
+
+.md-typeset li {
+  margin: 0.5em 0;
+  line-height: 1.85;
+}
+
+.md-typeset ul li::marker {
+  color: var(--g-moss);
+  font-size: 0.9em;
+}
+
+[data-md-color-scheme="slate"] .md-typeset ul li::marker {
+  color: var(--g-moss-light);
+}
+
+.md-typeset ol li::marker {
+  color: var(--g-terra);
+  font-family: 'ZCOOL XiaoWei', serif;
+  font-weight: 500;
+}
+
+[data-md-color-scheme="slate"] .md-typeset ol li::marker {
+  color: var(--g-sun-light);
+}
+
+/* ============================================================
+   表格
+   ============================================================ */
+.md-typeset table:not(.md-typeset__table) {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 1.5em 0;
+  font-size: 0.92em;
+}
+
+.md-typeset table th {
+  background: linear-gradient(135deg, var(--g-forest), var(--g-moss));
+  color: white;
+  font-weight: 500;
+  padding: 14px 20px;
+  font-family: 'ZCOOL XiaoWei', 'Noto Serif SC', serif;
+  letter-spacing: 0.8px;
+  font-size: 0.95em;
+  border: none;
+}
+
+[data-md-color-scheme="slate"] .md-typeset table th {
+  background: linear-gradient(135deg, var(--g-forest-d), var(--g-forest));
+}
+
+.md-typeset table td {
+  background: color-mix(in srgb, var(--g-paper) 85%, transparent);
+  padding: 12px 20px;
+  border: none;
+  border-top: var(--border-soft);
+  color: var(--g-ink);
+  transition: background-color 0.2s ease;
+}
+
+.md-typeset table tr:nth-child(even) td {
+  background: color-mix(in srgb, var(--g-warm) 35%, transparent);
+}
+
+[data-md-color-scheme="slate"] .md-typeset table tr:nth-child(even) td {
+  background: color-mix(in srgb, var(--g-warm) 45%, transparent);
+}
+
+.md-typeset table tr:hover td {
+  background: color-mix(in srgb, var(--g-moss) 12%, transparent);
+}
+
+.md-typeset table tr:last-child td:first-child { border-radius: 0 0 0 var(--radius-md); }
+.md-typeset table tr:last-child td:last-child  { border-radius: 0 0 var(--radius-md) 0; }
+
+/* ============================================================
+   代码
+   ============================================================ */
+.md-typeset pre {
+  border-radius: var(--radius-md);
+  border: var(--border-soft);
+  box-shadow: var(--shadow-sm);
+  background: var(--md-code-bg-color) !important;
+  padding: 1.2em 1.5em;
+  margin: 1.5em 0;
+}
+
+.md-typeset code {
+  font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+  font-size: 0.85em;
+  font-weight: 400;
+  border-radius: 6px;
+  padding: 0.18em 0.5em;
+  background: var(--md-code-bg-color);
+  color: var(--md-code-fg-color);
+  border: var(--border-soft);
+  letter-spacing: 0;
+}
+
+.md-typeset pre > code {
+  padding: 0;
+  background: transparent;
+  border: none;
+  font-size: 0.88em;
+  line-height: 1.75;
+}
+
+/* ============================================================
+   引用块
+   ============================================================ */
+.md-typeset blockquote {
+  border-left: 4px solid var(--g-moss);
+  background: linear-gradient(135deg, color-mix(in srgb, var(--g-moss) 7%, transparent), color-mix(in srgb, var(--g-sun) 4%, transparent));
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  padding: 1.2em 1.8em;
+  color: var(--g-brown);
+  font-family: 'Long Cang', 'ZCOOL XiaoWei', 'Noto Serif SC', cursive;
+  font-size: 1.15em;
+  margin: 1.8em 0;
+  letter-spacing: 1px;
+  line-height: 1.9;
+  position: relative;
+  box-shadow: var(--shadow-xs);
+}
+
+[data-md-color-scheme="slate"] .md-typeset blockquote {
+  color: var(--g-sun-light);
+  background: linear-gradient(135deg, color-mix(in srgb, var(--g-forest) 8%, transparent), color-mix(in srgb, var(--g-sun) 5%, transparent));
+  border-left-color: var(--g-sun);
+}
+
+.md-typeset blockquote::before {
+  content: '"';
+  position: absolute;
+  top: -10px;
+  left: 12px;
+  font-size: 3em;
+  color: var(--g-moss);
+  font-family: Georgia, serif;
+  opacity: 0.4;
+  line-height: 1;
+}
+
+[data-md-color-scheme="slate"] .md-typeset blockquote::before {
+  color: var(--g-sun-light);
+}
+
+.md-typeset blockquote p {
+  margin: 0.5em 0;
+}
+
+/* ============================================================
+   分隔线
+   ============================================================ */
+.md-typeset hr {
+  height: 2px;
+  border: none;
+  background: linear-gradient(90deg, transparent, var(--g-moss), var(--g-sun-light), var(--g-moss), transparent);
+  border-radius: 2px;
+  margin: 3rem 0;
+  opacity: 0.45;
+}
+
+[data-md-color-scheme="slate"] .md-typeset hr {
+  background: linear-gradient(90deg, transparent, var(--g-moss), var(--g-sun), var(--g-moss), transparent);
+  opacity: 0.3;
+}
+
+/* ============================================================
+   侧边栏导航
+   ============================================================ */
+.md-sidebar {
+  border-radius: var(--radius-lg);
+}
+
+.md-sidebar__scrollwrap {
+  background: color-mix(in srgb, var(--g-paper) 55%, transparent);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: var(--radius-lg);
+  margin: 6px;
+  border: var(--border-card);
+  padding: 10px;
+  box-shadow: var(--shadow-sm);
+}
+
+.md-nav__title {
+  font-family: 'ZCOOL XiaoWei', 'Noto Serif SC', serif;
+  color: var(--g-forest-d);
+  font-size: 0.98em;
+  letter-spacing: 1px;
+}
+
+[data-md-color-scheme="slate"] .md-nav__title {
+  color: var(--g-leaf);
+}
+
+.md-nav__item .md-nav__link {
+  border-radius: var(--radius-sm);
+  transition: all 0.3s var(--ease-smooth);
+  padding: 0.5em 0.9em;
+  color: var(--g-ink-soft);
+  font-size: 0.88em;
+  line-height: 1.6;
+}
+
+.md-nav__item .md-nav__link:hover {
+  background: color-mix(in srgb, var(--g-moss) 12%, transparent);
+  color: var(--g-forest);
+  transform: translateX(4px);
+}
+
+[data-md-color-scheme="slate"] .md-nav__item .md-nav__link:hover {
+  color: var(--g-leaf);
+  background: color-mix(in srgb, var(--g-forest) 10%, transparent);
+}
+
+.md-nav--primary .md-nav__link--active {
+  color: var(--g-forest);
+  background: color-mix(in srgb, var(--g-moss) 10%, transparent);
+  font-weight: 500;
+}
+
+[data-md-color-scheme="slate"] .md-nav--primary .md-nav__link--active {
+  color: var(--g-leaf);
+  background: color-mix(in srgb, var(--g-forest) 12%, transparent);
+}
+
+/* ============================================================
+   搜索框
+   ============================================================ */
+.md-search__form {
+  border-radius: var(--radius-full);
+  background: color-mix(in srgb, white 12%, transparent);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s var(--ease-smooth);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+[data-md-color-scheme="slate"] .md-search__form {
+  background: color-mix(in srgb, white 6%, transparent);
+}
+
+.md-search__form:hover {
+  background: color-mix(in srgb, white 20%, transparent);
+}
+
+[data-md-color-scheme="slate"] .md-search__form:hover {
+  background: color-mix(in srgb, white 10%, transparent);
+}
+
+.md-search__input {
+  border-radius: var(--radius-full);
+  background: transparent !important;
+  color: white;
+}
+
+.md-search__input::placeholder {
+  color: rgba(255,255,255,0.65);
+}
+
+/* ============================================================
+   页脚
+   ============================================================ */
+.md-footer {
+  background: linear-gradient(135deg, var(--g-forest-d) 0%, var(--g-forest) 100%);
+  border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+  margin-top: 3rem;
+  position: relative;
+}
+
+[data-md-color-scheme="slate"] .md-footer {
+  background: linear-gradient(135deg, var(--g-sky-deep) 0%, var(--g-sky) 100%);
+  border-top: var(--border-card);
+}
+
+.md-footer::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--g-moss), var(--g-sun-light), var(--g-moss), transparent);
+  opacity: 0.4;
+}
+
+.md-footer-meta {
+  background: color-mix(in srgb, black 8%, transparent);
+  backdrop-filter: blur(8px);
+}
+
+[data-md-color-scheme="slate"] .md-footer-meta {
+  background: color-mix(in srgb, black 18%, transparent);
+}
+
+.md-footer-copyright {
+  font-family: 'Long Cang', 'ZCOOL XiaoWei', 'Noto Serif SC', cursive;
+  letter-spacing: 2px;
+  opacity: 0.9;
+  font-size: 1.05em;
+}
+
+/* ============================================================
+   主题切换按钮
+   ============================================================ */
+.md-header__button {
+  border-radius: 50%;
+  transition: all 0.4s var(--ease-spring);
+}
+
+.md-header__button:hover {
+  background: color-mix(in srgb, white 15%, transparent);
+  transform: rotate(25deg) scale(1.1);
+}
+
+/* ============================================================
+   🌿 吉卜力卡片组件 — 升级版
+   ============================================================ */
+.ghibli-card {
+  background: color-mix(in srgb, var(--g-paper) 80%, transparent);
+  border-radius: var(--radius-lg);
+  padding: 2rem 2.2rem;
+  margin: 1.8rem 0;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: var(--border-card);
+  box-shadow: var(--shadow-md);
+  transition: all 0.5s var(--ease-spring);
+  position: relative;
+  overflow: hidden;
+}
+
+.ghibli-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--g-moss), var(--g-sun-light), var(--g-peach-light), transparent);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+.ghibli-card::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, color-mix(in srgb, var(--g-sun-light) 8%, transparent) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+}
+
+.ghibli-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-xl);
+  border-color: var(--g-moss);
+}
+
+.ghibli-card:hover::before {
+  opacity: 1;
+}
+
+.ghibli-card:hover::after {
+  opacity: 1;
+}
+
+.ghibli-card h2,
+.ghibli-card h3 {
+  margin-top: 0.5rem;
+}
+
+.ghibli-card p:last-child,
+.ghibli-card ul:last-child {
+  margin-bottom: 0;
+}
+
+/* ============================================================
+   标签徽章
+   ============================================================ */
+.tag {
+  display: inline-block;
+  padding: 0.25em 1em;
+  border-radius: var(--radius-full);
+  font-size: 0.78em;
+  font-weight: 500;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--g-moss) 18%, transparent), color-mix(in srgb, var(--g-sun) 10%, transparent));
+  color: var(--g-forest-d);
+  border: 1px solid color-mix(in srgb, var(--g-moss) 50%, transparent);
+  letter-spacing: 0.5px;
+  transition: all 0.3s var(--ease-spring);
+}
+
+[data-md-color-scheme="slate"] .tag {
+  color: var(--g-leaf);
+  background: linear-gradient(135deg, color-mix(in srgb, var(--g-forest) 18%, transparent), color-mix(in srgb, var(--g-sun) 8%, transparent));
+  border-color: color-mix(in srgb, var(--g-forest) 40%, transparent);
+}
+
+.tag:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 4px 12px rgba(123, 160, 91, 0.2);
+}
+
+/* ============================================================
+   漂浮粒子 — 升级版
+   ============================================================ */
+.ghibli-particle {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  animation: floatParticle linear infinite;
+  opacity: 0.5;
+  filter: drop-shadow(0 2px 4px rgba(139, 115, 85, 0.15));
+  will-change: transform, opacity;
+}
+
+@keyframes floatParticle {
+  0% {
+    transform: translateY(0) rotate(0deg) scale(1) translateX(0);
+    opacity: 0;
+  }
+  8% { opacity: 0.6; }
+  25% {
+    transform: translateY(-25vh) rotate(45deg) scale(0.95) translateX(20px);
+  }
+  50% {
+    opacity: 0.7;
+    transform: translateY(-50vh) rotate(180deg) scale(0.8) translateX(-10px);
+  }
+  75% {
+    transform: translateY(-75vh) rotate(315deg) scale(0.55) translateX(25px);
+  }
+  92% { opacity: 0.3; }
+  100% {
+    transform: translateY(-105vh) rotate(450deg) scale(0.2) translateX(-15px);
+    opacity: 0;
+  }
+}
+
+/* 暗色模式萤火虫效果 */
+[data-md-color-scheme="slate"] .ghibli-particle {
+  filter: drop-shadow(0 0 10px rgba(240, 199, 94, 0.5)) drop-shadow(0 0 20px rgba(255, 224, 138, 0.2));
+  opacity: 0.7;
+  animation: floatFirefly linear infinite;
+}
+
+@keyframes floatFirefly {
+  0% {
+    transform: translateY(0) translateX(0) scale(1);
+    opacity: 0;
+  }
+  10% { opacity: 0.8; }
+  25% {
+    transform: translateY(-20vh) translateX(15px) scale(0.9);
+    opacity: 0.5;
+  }
+  35% { opacity: 0.9; }
+  50% {
+    transform: translateY(-45vh) translateX(-10px) scale(0.7);
+    opacity: 0.6;
+  }
+  65% { opacity: 0.8; }
+  75% {
+    transform: translateY(-70vh) translateX(20px) scale(0.5);
+    opacity: 0.4;
+  }
+  90% { opacity: 0.6; }
+  100% {
+    transform: translateY(-100vh) translateX(-5px) scale(0.2);
+    opacity: 0;
+  }
+}
+
+@keyframes floatFireflyAlt {
+  0% {
+    transform: translateY(0) translateX(0) scale(0.8);
+    opacity: 0;
+  }
+  15% { opacity: 0.9; }
+  30% {
+    transform: translateY(-25vh) translateX(-20px) scale(1);
+    opacity: 0.4;
+  }
+  45% { opacity: 0.8; }
+  60% {
+    transform: translateY(-50vh) translateX(25px) scale(0.6);
+    opacity: 0.7;
+  }
+  75% { opacity: 0.5; }
+  85% {
+    transform: translateY(-80vh) translateX(-15px) scale(0.4);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-105vh) translateX(10px) scale(0.15);
+    opacity: 0;
+  }
+}
+
+/* ============================================================
+   技能条
+   ============================================================ */
+.skill-bar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 0.9em 0;
+}
+
+.skill-bar-label {
+  min-width: 140px;
+  font-weight: 500;
+  color: var(--g-ink);
+  font-size: 0.92em;
+  font-family: 'Noto Serif SC', serif;
+}
+
+.skill-bar-track {
+  flex: 1;
+  height: 10px;
+  background: color-mix(in srgb, var(--g-moss) 10%, transparent);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  position: relative;
+  box-shadow: var(--shadow-inset);
+}
+
+.skill-bar-fill {
+  height: 100%;
+  border-radius: var(--radius-full);
+  background: linear-gradient(90deg, var(--g-moss-light), var(--g-moss), var(--g-forest));
+  transition: width 1.6s var(--ease-spring);
+  position: relative;
+  box-shadow: 0 2px 8px rgba(123, 160, 91, 0.3);
+}
+
+.skill-bar-fill::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+  animation: shimmer 3s infinite;
+  border-radius: var(--radius-full);
+}
+
+[data-md-color-scheme="slate"] .skill-bar-fill {
+  background: linear-gradient(90deg, var(--g-forest-d), var(--g-forest), var(--g-moss));
+  box-shadow: 0 2px 12px rgba(107, 158, 106, 0.3);
+}
+
+[data-md-color-scheme="slate"] .skill-bar-fill::after {
+  background: linear-gradient(90deg, transparent, rgba(255,224,138,0.25), transparent);
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+/* ============================================================
+   星星评分
+   ============================================================ */
+.stars {
+  color: var(--g-sun);
+  letter-spacing: 3px;
+  font-size: 0.95em;
+  min-width: 90px;
+  text-align: right;
+}
+
+[data-md-color-scheme="slate"] .stars {
+  color: var(--g-sun-light);
+  text-shadow: 0 0 12px rgba(240, 199, 94, 0.4);
+}
+
+/* ============================================================
+   项目徽章
+   ============================================================ */
+.project-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0.3em 0.9em;
+  border-radius: var(--radius-full);
+  font-size: 0.78em;
+  font-weight: 500;
+  background: color-mix(in srgb, var(--g-terra) 10%, transparent);
+  color: var(--g-terra);
+  border: 1px solid color-mix(in srgb, var(--g-terra) 25%, transparent);
+  transition: all 0.3s var(--ease-spring);
+}
+
+[data-md-color-scheme="slate"] .project-badge {
+  background: color-mix(in srgb, var(--g-sun) 8%, transparent);
+  color: var(--g-sun-light);
+  border-color: color-mix(in srgb, var(--g-sun) 20%, transparent);
+}
+
+.project-badge:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 10px rgba(212, 132, 106, 0.2);
+}
+
+/* ============================================================
+   滚动条
+   ============================================================ */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--g-moss), var(--g-forest));
+  border-radius: var(--radius-full);
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+[data-md-color-scheme="slate"] ::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--g-forest-d), var(--g-forest));
+  background-clip: padding-box;
+  border: 2px solid transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--g-forest);
+  background-clip: padding-box;
+  border: 2px solid transparent;
+}
+
+/* ============================================================
+   选中文字
+   ============================================================ */
+::selection {
+  background: color-mix(in srgb, var(--g-moss) 25%, transparent);
+  color: var(--g-ink);
+}
+
+[data-md-color-scheme="slate"] ::selection {
+  background: color-mix(in srgb, var(--g-sun) 20%, transparent);
+  color: var(--g-ink);
+}
+
+/* ============================================================
+   图片
+   ============================================================ */
+.md-typeset img {
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  transition: transform 0.4s var(--ease-spring), box-shadow 0.4s ease;
+}
+
+.md-typeset img:hover {
+  transform: scale(1.02);
+  box-shadow: var(--shadow-lg);
+}
+
+/* ============================================================
+   返回顶部按钮
+   ============================================================ */
+.back-to-top {
+  position: fixed !important;
+  bottom: 32px !important;
+  right: 32px !important;
+  width: 54px !important;
+  height: 54px !important;
+  border-radius: 50% !important;
+  border: 2px solid var(--g-moss) !important;
+  background: color-mix(in srgb, var(--g-paper) 88%, transparent) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  cursor: pointer !important;
+  font-size: 22px !important;
+  display: none !important;
+  align-items: center !important;
+  justify-content: center !important;
+  z-index: 999 !important;
+  transition: all 0.4s var(--ease-spring) !important;
+  box-shadow: var(--shadow-md) !important;
+  line-height: 1 !important;
+}
+
+.back-to-top:hover {
+  background: color-mix(in srgb, var(--g-moss) 18%, transparent) !important;
+  transform: translateY(-5px) scale(1.1) !important;
+  box-shadow: var(--shadow-xl) !important;
+}
+
+[data-md-color-scheme="slate"] .back-to-top {
+  border-color: var(--g-forest) !important;
+}
+
+/* ============================================================
+   首页欢迎区特殊样式
+   ============================================================ */
+.welcome-quote {
+  text-align: center;
+  font-family: 'Long Cang', 'Ma Shan Zheng', cursive !important;
+  font-size: 1.3em !important;
+  color: var(--g-brown) !important;
+  letter-spacing: 2px !important;
+  margin: 1.5rem 0 !important;
+  line-height: 2 !important;
+}
+
+[data-md-color-scheme="slate"] .welcome-quote {
+  color: var(--g-peach-light) !important;
+}
+
+/* ============================================================
+   响应式优化
+   ============================================================ */
+@media screen and (max-width: 76.1875em) {
+  .md-content {
+    border-radius: var(--radius-lg);
+    padding: 0.8rem 1.8rem 2rem;
+  }
+  .md-typeset h1 { font-size: 2.2em; letter-spacing: 2px; }
+  .md-typeset h2 { font-size: 1.5em; }
+  .md-typeset h2::before { left: -0.9rem; }
+  .ghibli-card { padding: 1.6rem 1.8rem; border-radius: var(--radius-lg); }
+  .skill-bar-label { min-width: 110px; font-size: 0.88em; }
+  .stars { font-size: 0.88em; min-width: 80px; }
+}
+
+@media screen and (max-width: 600px) {
+  .md-content {
+    border-radius: var(--radius-md);
+    padding: 0.6rem 1.2rem 1.5rem;
+  }
+  .md-typeset { font-size: 0.92rem; line-height: 1.8; }
+  .md-typeset h1 { font-size: 1.8em; letter-spacing: 1px; }
+  .md-typeset h2 { font-size: 1.3em; }
+  .md-typeset h2::before { display: none; }
+  .md-typeset h3 { font-size: 1.15em; }
+  .ghibli-card { padding: 1.4rem; border-radius: var(--radius-md); margin: 1.2rem 0; }
+  .skill-bar { flex-wrap: wrap; gap: 8px; }
+  .skill-bar-label { min-width: 100%; font-size: 0.85em; }
+  .stars { min-width: auto; font-size: 0.82em; }
+  .back-to-top { width: 46px !important; height: 46px !important; bottom: 20px !important; right: 20px !important; font-size: 18px !important; }
+}
+
+/* ============================================================
+   主题切换过渡动画
+   ============================================================ */
+.theme-transitioning * {
+  transition: background-color 0.5s var(--ease-smooth),
+              color 0.5s var(--ease-smooth),
+              border-color 0.5s var(--ease-smooth),
+              box-shadow 0.5s var(--ease-smooth) !important;
+}
+
+/* ============================================================
+   加载动画
+   ============================================================ */
+@keyframes pageLoad {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.md-main {
+  animation: pageLoad 0.6s var(--ease-out) forwards;
+}
