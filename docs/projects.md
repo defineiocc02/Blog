@@ -2,7 +2,7 @@
 
 ---
 
-<div class="ghibli-card">
+<div class="ghibli-card" markdown="1">
 
 ## 原创研究项目
 
@@ -20,7 +20,7 @@
 
 ---
 
-<div class="ghibli-card">
+<div class="ghibli-card" markdown="1">
 
 ### ⚙️ ADC 工具箱
 
@@ -36,7 +36,7 @@ ADC 完整开发工具箱，涵盖建模、测试、分析、标定全流程。
 
 ---
 
-<div class="ghibli-card">
+<div class="ghibli-card" markdown="1">
 
 ### 🧪 SAR ADC 验证框架
 
@@ -52,7 +52,7 @@ ADC 完整开发工具箱，涵盖建模、测试、分析、标定全流程。
 
 ---
 
-<div class="ghibli-card">
+<div class="ghibli-card" markdown="1">
 
 ## 数字设计
 
@@ -70,7 +70,7 @@ ADC 完整开发工具箱，涵盖建模、测试、分析、标定全流程。
 
 ---
 
-<div class="ghibli-card">
+<div class="ghibli-card" markdown="1">
 
 ## 学习资源
 
@@ -114,7 +114,7 @@ HLS/RISC-V/计算机体系结构书籍的完整 IP 项目集合，Springer 发�
 
 ---
 
-<div class="ghibli-card">
+<div class="ghibli-card" markdown="1">
 
 ## 即将推出 🚀
 

@@ -2,7 +2,7 @@
 
 ---
 
-<div class="ghibli-card">
+<div class="ghibli-card" markdown="1">
 
 ## 模拟/混合信号芯片设计
 
@@ -42,7 +42,7 @@
 
 ---
 
-<div class="ghibli-card">
+<div class="ghibli-card" markdown="1">
 
 ## 数字设计与验证
 
@@ -82,7 +82,7 @@
 
 ---
 
-<div class="ghibli-card">
+<div class="ghibli-card" markdown="1">
 
 ## 深度学习与 AI
 
@@ -122,7 +122,7 @@
 
 ---
 
-<div class="ghibli-card">
+<div class="ghibli-card" markdown="1">
 
 ## 技术栈一览
 
@@ -156,7 +156,7 @@
 
 ---
 
-<div class="ghibli-card">
+<div class="ghibli-card" markdown="1">
 
 ## 工具与平台
 
@@ -185,7 +185,7 @@
 
 ---
 
-<div class="ghibli-card">
+<div class="ghibli-card" markdown="1">
 
 ## 持续学习
 

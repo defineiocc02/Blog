@@ -7,7 +7,7 @@
 
 ---
 
-<div class="ghibli-card">
+<div class="ghibli-card" markdown="1">
 
 ## 🌿 你好，我是 Starynight
 
@@ -26,7 +26,7 @@
 
 ---
 
-<div class="ghibli-card">
+<div class="ghibli-card" markdown="1">
 
 ## 🌟 正在做的事
 
@@ -49,7 +49,7 @@
 
 ---
 
-<div class="ghibli-card">
+<div class="ghibli-card" markdown="1">
 
 ## 📚 我在读的书
 
@@ -64,7 +64,7 @@
 
 ---
 
-<div class="ghibli-card">
+<div class="ghibli-card" markdown="1">
 
 ## 🎯 此刻在想什么
 

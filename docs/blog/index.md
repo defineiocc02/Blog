@@ -2,7 +2,7 @@
 
 ---
 
-<div class="ghibli-card">
+<div class="ghibli-card" markdown="1">
 
 ## 2026
 
@@ -17,7 +17,7 @@
 
 ---
 
-<div class="ghibli-card">
+<div class="ghibli-card" markdown="1">
 
 ### 🍃 个人博客上线
 

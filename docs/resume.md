@@ -2,7 +2,7 @@
 
 ---
 
-<div class="ghibli-card">
+<div class="ghibli-card" markdown="1">
 
 ## 基本信息
 
@@ -18,7 +18,7 @@
 
 ---
 
-<div class="ghibli-card">
+<div class="ghibli-card" markdown="1">
 
 ## 专业技能
 
@@ -128,7 +128,7 @@
 
 ---
 
-<div class="ghibli-card">
+<div class="ghibli-card" markdown="1">
 
 ## 技术栈
 
@@ -164,7 +164,7 @@
 
 ---
 
-<div class="ghibli-card">
+<div class="ghibli-card" markdown="1">
 
 ## 项目经历
 
@@ -196,7 +196,7 @@
 
 ---
 
-<div class="ghibli-card">
+<div class="ghibli-card" markdown="1">
 
 ## 语言能力
 
@@ -207,7 +207,7 @@
 
 ---
 
-<div class="ghibli-card">
+<div class="ghibli-card" markdown="1">
 
 ## 使命宣言
 
