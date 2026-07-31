@@ -161,48 +161,64 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
-/* ---- 调整内容区域宽度，大幅减少左右空白 ---- */
+/* ---- 弹性比例布局，减少左右空白 ---- */
 .md-grid {
-  max-width: 95%;
-  width: 95%;
+  max-width: 94%;
+  width: 94%;
 }
 
+/* 桌面端：侧边栏占小比例，主内容区充分扩展 */
 @media screen and (min-width: 76.25em) {
-  .md-grid {
-    max-width: 94%;
-    width: 94%;
-  }
-  .md-sidebar--primary {
-    width: 11rem;
-  }
-  .md-sidebar--secondary {
-    width: 11rem;
-    margin-left: -11rem;
-  }
-  /* 主内容区域 */
-  .md-content {
-    max-width: none;
-  }
-}
-
-@media screen and (min-width: 100em) {
   .md-grid {
     max-width: 92%;
     width: 92%;
   }
+  /* 侧边栏宽度适中 */
   .md-sidebar--primary {
     width: 12rem;
   }
+  /* 集成目录后不需要右侧边栏 */
   .md-sidebar--secondary {
-    width: 12rem;
-    margin-left: -12rem;
+    display: none;
+  }
+  /* 主内容区域自适应 */
+  .md-content {
+    max-width: none;
+    flex: 1;
+  }
+  /* 让主内容区充分利用空间 */
+  .md-main__inner {
+    display: flex;
+    flex-wrap: nowrap;
   }
 }
 
-@media screen and (min-width: 120em) {
+/* 大屏幕 */
+@media screen and (min-width: 100em) {
   .md-grid {
     max-width: 90%;
     width: 90%;
+  }
+  .md-sidebar--primary {
+    width: 13rem;
+  }
+}
+
+/* 超宽屏幕 */
+@media screen and (min-width: 120em) {
+  .md-grid {
+    max-width: 88%;
+    width: 88%;
+  }
+  .md-sidebar--primary {
+    width: 14rem;
+  }
+}
+
+/* 主内容区域padding调整 */
+@media screen and (min-width: 76.25em) {
+  .md-content {
+    padding: 1rem 2.2rem 2.5rem;
   }
 }
 
