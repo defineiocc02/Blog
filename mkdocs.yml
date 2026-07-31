@@ -1,7 +1,7 @@
 site_name: Starynight | 个人博客
 site_description: 模拟/混合信号芯片设计工程师 · 深度学习爱好者 · 计算机体系结构探索者
 site_author: Starynight (defineiocc02)
-site_url: https://defineiocc02.github.io/Blog/
+site_url: https://defineiocc02.github.io/
 
 repo_name: defineiocc02/Blog
 repo_url: https://github.com/defineiocc02/Blog
@@ -28,6 +28,7 @@ theme:
     - navigation.top
     - navigation.tracking
     - navigation.footer
+    - navigation.indexes
     - search.highlight
     - search.suggest
     - content.code.copy
@@ -56,6 +57,7 @@ extra:
 
 markdown_extensions:
   - admonition
+  - md_in_html
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.highlight:
