@@ -1,0 +1,73 @@
+site_name: Starynight | 个人博客
+site_description: 模拟/混合信号芯片设计工程师 · 深度学习爱好者 · 计算机体系结构探索者
+site_author: Starynight (defineiocc02)
+site_url: https://defineiocc02.github.io/blog/
+
+repo_name: defineiocc02/blog
+repo_url: https://github.com/defineiocc02/blog
+
+theme:
+  name: material
+  language: zh
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: 切换暗色模式
+    - scheme: slate
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/weather-sunny
+        name: 切换亮色模式
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - content.code.annotate
+  icon:
+    logo: material/account-circle
+    favicon: material/account-circle
+
+nav:
+  - 主页: index.md
+  - 简历: resume.md
+  - 项目: projects.md
+  - 技能: skills.md
+  - 博客: blog/
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/defineiocc02
+    - icon: fontawesome/solid/envelope
+      link: mailto:defineiocc02@example.com
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - tables
+  - toc:
+      permalink: true
+
+copyright: Copyright &copy; 2026 Starynight (defineiocc02)
