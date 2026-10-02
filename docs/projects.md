@@ -1,126 +1,39 @@
-# 🚀 项目
+# 项目与资料导航
 
----
+研究项目按规格和验证层级组织。指标必须与配置和原始证据一起阅读，仓库体积与测试通过不能替代科学验证。
 
-<div class="ghibli-card" markdown="1">
+## 研究与工程
 
-## 原创研究项目
+| 项目 | 内容 | 证据状态 |
+|---|---|---|
+| [20 位 SAR 行为与数字实现](https://github.com/defineiocc02/20bit_SAR_ADC_Behaviour_Verification) | 两级残差架构、来源分级、定点与 RTL | 行为/数字证据；芯片参数仍含假设 |
+| [12 位失配校准模型](https://github.com/defineiocc02/Behavioral-modeling-of-12bit-calibrated-sar-adc) | 失配、前景校准、Python 与 RTL | 通过率受模型和阈值限定；正常转换零噪声 |
+| [16 位数字后端审计](https://github.com/defineiocc02/SAR16_Digital_Backend_Signoff) | 网表、版图、时序与交付证据 | LVS、hold、DRC 仍有未闭合项 |
+| [SAR 数字处理与验证](https://github.com/defineiocc02/Digital_process.srcs) | 校准控制、重构、历史 RTL 归档 | 频谱口径已修复；历史报告需重算 |
+| [MATLAB 残差算法比较](https://github.com/defineiocc02/SAR_ADC_Verification) | MLE、BE 等算法与频谱分析 | 数值检查已通过；完整实验待重跑 |
 
-### 🔴 12位 SAR ADC 行为建模
+## 上游工具的个人 fork
 
-[![GitHub](https://img.shields.io/badge/GitHub-Behavioral--modeling--of--12bit--calibrated--sar--adc-7BA05B?style=for-the-badge&logo=github)](https://github.com/defineiocc02/Behavioral-modeling-of-12bit-calibrated-sar-adc)
+| 工具 | 上游 |
+|---|---|
+| [ADCToolbox](https://github.com/defineiocc02/ADCToolbox) | [Arcadia-1/ADCToolbox](https://github.com/Arcadia-1/ADCToolbox) |
+| [virtuoso-bridge-lite](https://github.com/defineiocc02/virtuoso-bridge-lite) | [Arcadia-1/virtuoso-bridge-lite](https://github.com/Arcadia-1/virtuoso-bridge-lite) |
 
-12 位 SAR ADC 高级标定技术的行为建模项目，使用 Python 实现。
+工具著作权与许可保留上游信息，个人增量见各仓库提交记录。
 
-- **技术栈**: Python
-- **规模**: 120MB+ 综合代码库
-- **状态**: 最新活跃 <span class="project-badge">🚀</span>
+<details>
+<summary>学习资料与书籍代码</summary>
 
-</div>
+- [d2l-zh](https://github.com/defineiocc02/d2l-zh) — fork 自 [d2l-ai/d2l-zh](https://github.com/d2l-ai/d2l-zh)。
+- [Deep_Learning_Foundation_and_Concepts-Springer](https://github.com/defineiocc02/Deep_Learning_Foundation_and_Concepts-Springer) — fork 自 [BreCaspian/Deep_Learning_Foundation_and_Concepts-Springer](https://github.com/BreCaspian/Deep_Learning_Foundation_and_Concepts-Springer)。
+- [goossens-book-ip-projects](https://github.com/defineiocc02/goossens-book-ip-projects) — fork 自 [goossens-springer/goossens-book-ip-projects](https://github.com/goossens-springer/goossens-book-ip-projects)。
+- [Hands-On-Large-Language-Models](https://github.com/defineiocc02/Hands-On-Large-Language-Models) — fork 自 [HandsOnLLM/Hands-On-Large-Language-Models](https://github.com/HandsOnLLM/Hands-On-Large-Language-Models)。
 
----
+</details>
 
-<div class="ghibli-card" markdown="1">
+## 阅读与复现
 
-### ⚙️ ADC 工具箱
+- [统一仓库规范](https://github.com/defineiocc02/defineiocc02/blob/main/REPOSITORY_GUIDE.md)
+- [本轮审查与改进路线](https://github.com/defineiocc02/defineiocc02/blob/main/REVIEW_20261002.md)
 
-[![GitHub](https://img.shields.io/badge/GitHub-ADCToolbox-7BA05B?style=for-the-badge&logo=github)](https://github.com/defineiocc02/ADCToolbox)
-
-ADC 完整开发工具箱，涵盖建模、测试、分析、标定全流程。
-
-- **技术栈**: Python
-- **规模**: 21MB
-- **状态**: 持续维护 <span class="project-badge">🔧</span>
-
-</div>
-
----
-
-<div class="ghibli-card" markdown="1">
-
-### 🧪 SAR ADC 验证框架
-
-[![GitHub](https://img.shields.io/badge/GitHub-SAR__ADC__Verification-7BA05B?style=for-the-badge&logo=github)](https://github.com/defineiocc02/SAR_ADC_Verification)
-
-基于 MATLAB 的 SAR ADC 生产级验证框架，提供性能验证与综合分析。
-
-- **技术栈**: MATLAB
-- **规模**: 21MB
-- **状态**: 持续维护 <span class="project-badge">🔧</span>
-
-</div>
-
----
-
-<div class="ghibli-card" markdown="1">
-
-## 数字设计
-
-### 🛠️ SystemVerilog 数字电路设计
-
-[![GitHub](https://img.shields.io/badge/GitHub-Digital__process.srcs-7BA05B?style=for-the-badge&logo=github)](https://github.com/defineiocc02/Digital_process.srcs)
-
-完整的 SystemVerilog 数字电路设计与验证示例集合。
-
-- **技术栈**: SystemVerilog
-- **规模**: 37MB
-- **许可**: MIT License
-
-</div>
-
----
-
-<div class="ghibli-card" markdown="1">
-
-## 学习资源
-
-### 📚 动手学深度学习
-
-[![GitHub](https://img.shields.io/badge/GitHub-d2l--zh-D4846A?style=for-the-badge&logo=github)](https://github.com/defineiocc02/d2l-zh)
-
-《动手学深度学习》中文版，被 70 多个国家 500+ 所大学采用。
-
-- **规模**: 317MB
-- **许可**: Apache 2.0
-
-### 📘 深度学习基础（Springer）
-
-[![GitHub](https://img.shields.io/badge/GitHub-Deep__Learning__Foundation__and__Concepts-D4846A?style=for-the-badge&logo=github)](https://github.com/defineiocc02/Deep_Learning_Foundation_and_Concepts-Springer)
-
-Springer 官方出版的深度学习基础教材，由 Bishop 等业界领袖著作。
-
-- **规模**: 999MB
-- **许可**: MIT License
-
-### 🤖 动手学大语言模型
-
-[![GitHub](https://img.shields.io/badge/GitHub-Hands--On--Large--Language--Models-D4846A?style=for-the-badge&logo=github)](https://github.com/defineiocc02/Hands-On-Large-Language-Models)
-
-O'Reilly 官方书籍代码，实用的 LLM 实现模式与真实世界用例。
-
-- **规模**: 13MB
-- **许可**: Apache 2.0
-
-### 🏗️ 计算机体系结构 & VLSI
-
-[![GitHub](https://img.shields.io/badge/GitHub-goossens--book--ip--projects-D4846A?style=for-the-badge&logo=github)](https://github.com/defineiocc02/goossens-book-ip-projects)
-
-HLS/RISC-V/计算机体系结构书籍的完整 IP 项目集合，Springer 发布。
-
-- **技术栈**: VHDL
-- **规模**: 1.9GB
-
-</div>
-
----
-
-<div class="ghibli-card" markdown="1">
-
-## 即将推出 🚀
-
-- ML 优化高级 ADC 建模
-- RISC-V 处理器实现
-- AI 辅助芯片设计验证
-- 开源 EDA 工具贡献
-
-</div>
+各项目 README 给出当前证据、依赖、复现入口和未闭合项。许可按文件及上游实际声明判断，不用一个通用标签概括全部材料。

@@ -1,32 +1,11 @@
-# Starynight 个人博客
+# 技术博客与项目导航
 
-基于 [MkDocs](https://www.mkdocs.org/) 和 [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) 构建的个人博客与简历网站。
+本仓库维护个人技术博客。研究、工具 fork 与学习资源的统一入口见 [项目页面](docs/projects.md)；[首页](docs/index.md) 保留个人介绍。
 
-## 本地运行
+## 维护
 
-```bash
-# 安装依赖
-pip install mkdocs mkdocs-material
+站点结构与主题由 [MkDocs 配置](mkdocs.yml) 定义。依赖和发布过程以 [.github 工作流](.github/workflows/) 为准；日常编辑参见 [维护指南](MAINTENANCE_GUIDE.md)。
 
-# 本地预览
-mkdocs serve
+## 内容依据
 
-# 构建静态文件
-mkdocs build
-```
-
-## 部署
-
-### 自动部署 (推荐)
-
-推送代码到 `main` 分支后，GitHub Actions 会自动构建并部署到 GitHub Pages。
-
-### 手动部署
-
-```bash
-mkdocs gh-deploy
-```
-
-## 许可证
-
-MIT License
+项目状态来自对应仓库的 README、数据与检查记录。行为结果、数字实现、物理签核和实测分别注明；工具和教材 fork 明确链接上游。新增文章中的性能数字应同时附原始证据、运行配置、方法和限制。
