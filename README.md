@@ -1,8 +1,8 @@
 # Blog
 
-> 个人技术博客，用 MkDocs + Material for MkDocs 构建，记录芯片设计、深度学习与体系结构。
+![状态](https://img.shields.io/badge/%E7%8A%B6%E6%80%81-%E6%B4%BB%E8%B7%83-2ea043?style=flat-square) ![类型](https://img.shields.io/badge/%E7%B1%BB%E5%9E%8B-%E4%B8%AA%E4%BA%BA%E7%AB%99%E7%82%B9-6e7781?style=flat-square) ![技术栈](https://img.shields.io/badge/%E6%8A%80%E6%9C%AF%E6%A0%88-MkDocs-6e7781?style=flat-square) ![许可](https://img.shields.io/badge/%E8%AE%B8%E5%8F%AF-%E6%9C%AA%E6%8C%87%E5%AE%9A-6e7781?style=flat-square)
 
-[![Deploy](https://github.com/defineiocc02/Blog/actions/workflows/deploy.yml/badge.svg)](https://github.com/defineiocc02/Blog/actions/workflows/deploy.yml)
+> 个人技术博客，用 MkDocs + Material for MkDocs 构建，记录芯片设计、深度学习与体系结构。
 
 访问地址：https://defineiocc02.github.io/Blog/
 
@@ -99,6 +99,10 @@ Blog/
 - **构建不做严格校验**。用的是 `mkdocs build` 而非 `mkdocs build --strict`，坏链与配置警告不会让 CI 失败。
 - **无版本清单**。仓库没有 `requirements.txt`，本地与 CI 的依赖版本只能靠人工对齐。
 - **无分支保护**。`main` 未开启保护，而它直接决定线上内容，误 force push 会连带影响站点。
+
+## 相关仓库
+
+暂无直接关联的仓库。
 
 ## 许可
 
