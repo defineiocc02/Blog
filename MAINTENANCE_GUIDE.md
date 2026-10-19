@@ -43,10 +43,25 @@ mkdocs serve -a 0.0.0.0:8000  # 允许外部访问
 mkdocs build              # 构建到 site/ 目录
 ```
 
-### 手动部署到 GitHub Pages
-```bash
-mkdocs gh-deploy --force  # 强制部署到 gh-pages 分支
-```
+### 发布到 GitHub Pages（走 CI）
+
+正常发布只有一步：把改动 push 到 `main`，其余交给 GitHub Actions。
+
+`.github/workflows/deploy.yml` 在 `push` 到 `main`（以及 `workflow_dispatch`）时执行：
+
+1. `mkdocs build` 构建到 `site/`
+2. `peaceiris/actions-gh-pages@v4` 把 `./site` 推送到 `gh-pages` 分支
+3. GitHub Pages 从 `gh-pages` 发布，即线上 https://defineiocc02.github.io/Blog/
+
+需要重跑时，在 Actions 页面选中该 workflow 点 **Run workflow** 手动触发。
+
+**不要**在本地执行 `mkdocs gh-deploy --force`：
+
+- 它绕过 CI，用本地工作区（可能含未提交改动，依赖版本也未必与 CI 一致）直接 force 覆盖 `gh-pages`；
+- `gh-pages` 没有任何内容校验，覆盖后看起来"部署成功"，实际内容却可能不是 `main` 的构建产物，形成静默漂移；
+- 漂移后下次 CI 运行又会把 `gh-pages` 推回去，线上内容来回跳，且从提交历史很难分辨哪一次是真实状态。
+
+部署是否成功，看 Actions 里该次 workflow 的结论即可。
 
 ---
 
